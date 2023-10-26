@@ -1,0 +1,43 @@
+<RCC>
+  <qresource prefix="Icon">
+    <file>icon/polygon.png</file>
+    <file>icon/marker.png</file>
+    <file>icon/markerBlue.png</file>
+    <file>icon/ImageDocument.png</file>
+    <file>icon/ruler.png</file>
+    <file>icon/folder2.png</file>
+    <file>icon/3D Icon.png</file>
+    <file>icon/250px-Marching_tetrahedrons.png</file>
+    <file>icon/application_x_object.png</file>
+    <file>icon/extract.png</file>
+    <file>icon/ExtractLargestSurface.png</file>
+    <file>icon/folder.png</file>
+    <file>icon/Help.png</file>
+    <file>icon/ITK-PNG.png</file>
+    <file>icon/logout.png</file>
+    <file>icon/Mouse.png</file>
+    <file>icon/OK.png</file>
+    <file>icon/play.png</file>
+    <file>icon/plus.png</file>
+    <file>icon/printer.png</file>
+    <file>icon/processing_logo.png</file>
+    <file>icon/Reset.png</file>
+    <file>icon/S.png</file>
+    <file>icon/save.png</file>
+    <file>icon/scissors.png</file>
+    <file>icon/Screenshot.png</file>
+    <file>icon/Settings-icon.png</file>
+    <file>icon/T.png</file>
+    <file>icon/texture_and_shading.png</file>
+    <file>icon/VTK.png</file>
+  </qresource>
+  <qresource prefix="Image">
+    <file>Image/background_1.jpg</file>
+    <file>Image/background_2.png</file>
+    <file>Image/desktop-grey-wallpapers-hd-grey-wallpaper-20.jpg</file>
+    <file>Image/grey-wallpapers-hd-grey-wallpaper-13.png</file>
+    <file>Image/lightbluebackground.jpg</file>
+    <file>Image/noisy_grey-HD.jpg</file>
+    <file>Image/papyrus.jpg</file>
+  </qresource>
+</RCC>

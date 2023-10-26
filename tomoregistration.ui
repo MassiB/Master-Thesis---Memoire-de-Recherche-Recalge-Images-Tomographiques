@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TomoRegistrationClass</class>
+ <widget class="QMainWindow" name="TomoRegistrationClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>917</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>917</width>
+    <height>553</height>
+   </size>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>TomoRegistration by Massinissa Bandou</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imageregistration.qrc">
+    <normaloff>:/Icon/icon/Mouse.png</normaloff>:/Icon/icon/Mouse.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#statusBar
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0.114, stop:0 rgba(171, 171, 171, 173), stop:1 rgba(255, 255, 255, 173));
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="opaqueResize">
+       <bool>false</bool>
+      </property>
+      <property name="handleWidth">
+       <number>2</number>
+      </property>
+      <property name="childrenCollapsible">
+       <bool>false</bool>
+      </property>
+      <widget class="QSplitter" name="splitter">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="opaqueResize">
+        <bool>false</bool>
+       </property>
+       <property name="handleWidth">
+        <number>2</number>
+       </property>
+       <property name="childrenCollapsible">
+        <bool>false</bool>
+       </property>
+       <widget class="QVTKWidget" name="qvtkWidget1">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+       <widget class="QVTKWidget" name="qvtkWidget2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QVTKWidget" name="qvtkWidget3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>917</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="menuOpen">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="title">
+      <string>Open</string>
+     </property>
+     <property name="icon">
+      <iconset resource="imageregistration.qrc">
+       <normaloff>:/Icon/icon/folder2.png</normaloff>:/Icon/icon/folder2.png</iconset>
+     </property>
+     <addaction name="actionSource"/>
+     <addaction name="actionTarget"/>
+    </widget>
+    <addaction name="menuOpen"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="title">
+     <string>&amp;Tools</string>
+    </property>
+    <addaction name="actionData_Processing"/>
+    <addaction name="separator"/>
+    <addaction name="actionSettings"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuTools"/>
+  </widget>
+  <widget class="QToolBar" name="DicomSeriesToolBar">
+   <property name="windowTitle">
+    <string>registration toolbar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>20</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSeriesDicom"/>
+   <addaction name="action3D"/>
+   <addaction name="actionSurface"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>dicom toolBar</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>50</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="sizeGripEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <action name="actionSave_As">
+   <property name="icon">
+    <iconset resource="imageregistration.qrc">
+     <normaloff>:/Icon/icon/save.png</normaloff>:/Icon/icon/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save As...</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="imageregistration.qrc">
+     <normaloff>:/Icon/icon/logout.png</normaloff>:/Icon/icon/logout.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Exit</string>
+   </property>
+  </action>
+  <action name="actionSource">
+   <property name="icon">
+    <iconset resource="imageregistration.qrc">
+     <normaloff>:/Icon/icon/S.png</normaloff>:/Icon/icon/S.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Source</string>
+   </property>
+  </action>
+  <action name="actionTarget">
+   <property name="icon">
+    <iconset resource="imageregistration.qrc">
+     <normaloff>:/Icon/icon/T.png</normaloff>:/Icon/icon/T.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Target</string>
+   </property>
+  </action>
+  <action name="actionProfile_Profile">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Profile / Profile</string>
+   </property>
+  </action>
+  <action name="actionProfile_PET">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Profile / PET</string>
+   </property>
+  </action>
+  <action name="actionFiducialMarkers">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Fiducial Markers</string>
+   </property>
+  </action>
+  <action name="actionData_Processing">
+   <property name="icon">
+    <iconset resource="imageregistration.qrc">
+     <normaloff>:/Icon/icon/processing_logo.png</normaloff>:/Icon/icon/processing_logo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Data Process...</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset resource="imageregistration.qrc">
+     <normaloff>:/Icon/icon/Settings-icon.png</normaloff>:/Icon/icon/Settings-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Settings...</string>
+   </property>
+  </action>
+  <action name="action_VTK">
+   <property name="icon">
+    <iconset resource="imageregistration.qrc">
+     <normaloff>:/Icon/icon/VTK.png</normaloff>:/Icon/icon/VTK.png</iconset>
+   </property>
+   <property name="text">
+    <string>    VTK</string>
+   </property>
+  </action>
+  <action name="action_ITK">
+   <property name="icon">
+    <iconset resource="imageregistration.qrc">
+     <normaloff>:/Icon/icon/ITK-PNG.png</normaloff>:/Icon/icon/ITK-PNG.png</iconset>
+   </property>
+   <property name="text">
+    <string>     ITK</string>
+   </property>
+  </action>
+  <action name="action3D">
+   <property name="icon">
+    <iconset resource="imageregistration.qrc">
+     <normaloff>:/Icon/icon/3D Icon.png</normaloff>:/Icon/icon/3D Icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>3D</string>
+   </property>
+  </action>
+  <action name="actionSurface">
+   <property name="icon">
+    <iconset resource="imageregistration.qrc">
+     <normaloff>:/Icon/icon/250px-Marching_tetrahedrons.png</normaloff>:/Icon/icon/250px-Marching_tetrahedrons.png</iconset>
+   </property>
+   <property name="text">
+    <string>Surface</string>
+   </property>
+  </action>
+  <action name="actionApply">
+   <property name="icon">
+    <iconset resource="imageregistration.qrc">
+     <normaloff>:/Icon/icon/play.png</normaloff>:/Icon/icon/play.png</iconset>
+   </property>
+   <property name="text">
+    <string>Apply</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="icon">
+    <iconset resource="imageregistration.qrc">
+     <normaloff>:/Icon/icon/Reset.png</normaloff>:/Icon/icon/Reset.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionMm">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>inch to mm</string>
+   </property>
+  </action>
+  <action name="actionInch">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>inch</string>
+   </property>
+  </action>
+  <action name="actionScreenShot">
+   <property name="icon">
+    <iconset resource="imageregistration.qrc">
+     <normaloff>:/Icon/icon/Screenshot.png</normaloff>:/Icon/icon/Screenshot.png</iconset>
+   </property>
+   <property name="text">
+    <string>ScreenShot</string>
+   </property>
+  </action>
+  <action name="actionSeriesDicom">
+   <property name="icon">
+    <iconset resource="imageregistration.qrc">
+     <normaloff>:/Icon/icon/ImageDocument.png</normaloff>:/Icon/icon/ImageDocument.png</iconset>
+   </property>
+   <property name="text">
+    <string>SeriesDicom</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKWidget</class>
+   <extends>QWidget</extends>
+   <header>QVTKWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="imageregistration.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>action3D</sender>
+   <signal>triggered()</signal>
+   <receiver>TomoRegistrationClass</receiver>
+   <slot>Get3D()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionApply</sender>
+   <signal>triggered()</signal>
+   <receiver>TomoRegistrationClass</receiver>
+   <slot>ApplyRegistration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionReset</sender>
+   <signal>triggered()</signal>
+   <receiver>TomoRegistrationClass</receiver>
+   <slot>Reset()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave_As</sender>
+   <signal>triggered()</signal>
+   <receiver>TomoRegistrationClass</receiver>
+   <slot>Save()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionData_Processing</sender>
+   <signal>triggered()</signal>
+   <receiver>TomoRegistrationClass</receiver>
+   <slot>OpenDataProcess()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSettings</sender>
+   <signal>triggered()</signal>
+   <receiver>TomoRegistrationClass</receiver>
+   <slot>OpenSettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSource</sender>
+   <signal>triggered()</signal>
+   <receiver>TomoRegistrationClass</receiver>
+   <slot>OpenSource()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTarget</sender>
+   <signal>triggered()</signal>
+   <receiver>TomoRegistrationClass</receiver>
+   <slot>OpenTarget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSurface</sender>
+   <signal>triggered()</signal>
+   <receiver>TomoRegistrationClass</receiver>
+   <slot>GetSurface()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSeriesDicom</sender>
+   <signal>triggered()</signal>
+   <receiver>TomoRegistrationClass</receiver>
+   <slot>DisplayDicomSeries()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>TomoRegistrationClass</receiver>
+   <slot>exit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>OpenSource()</slot>
+  <slot>OpenTarget()</slot>
+  <slot>ApplyRegistration()</slot>
+  <slot>Save()</slot>
+  <slot>Reset()</slot>
+  <slot>Get3D()</slot>
+  <slot>GetSurface()</slot>
+  <slot>OpenSettings()</slot>
+  <slot>OpenDataProcess()</slot>
+  <slot>exit()</slot>
+  <slot>DisplayDicomSeries()</slot>
+ </slots>
+</ui>

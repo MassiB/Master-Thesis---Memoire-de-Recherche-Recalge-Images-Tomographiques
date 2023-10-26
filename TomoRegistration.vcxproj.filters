@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{83c28585-63ef-4a5b-9f55-553f994fb485}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{38715cda-a0b5-4592-9afc-09624e90a2e3}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tomoregistration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tomoregistration.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tomoregistration.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_imageregistration.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Landmark.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="myVtkInteractorStyleImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ITKRegistration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VOI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_dataProcess.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_dataProcess.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MyInteractorStyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PolydataInteractorStyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataDimension.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressBarGUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="tomoregistration.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tomoregistration.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\ImageRegistration\imageregistration.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\ImageRegistration\DataProcessGUI.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\ImageRegistration\SettingsGUI.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MarchingCubesValue.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dataProcess.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TransformGUI.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DataDimension.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ProgressBarGUI.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_tomoregistration.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="landmark.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="myVtkInteractorStyleImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_DataProcessGUI.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_SettingsGUI.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MarchingCubesValue.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MarchingCubesValue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ITKRegistration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VOI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyInteractorStyle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PolydataInteractorStyle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_TransformGUI.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_DataDimension.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataDimension.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ProgressBarGUI.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressBarGUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\ImageRegistration\icon\folder2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\3D Icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\250px-Marching_tetrahedrons.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\application_x_object.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\extract.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\ExtractLargestSurface.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\folder.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\Help.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\ITK-PNG.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\logout.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\Mouse.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\OK.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\play.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\plus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\printer.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\processing_logo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\Reset.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\S.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\save.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\scissors.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\Screenshot.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\Settings-icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\T.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\texture_and_shading.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\icon\VTK.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\Image\background_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\Image\background_2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\Image\desktop-grey-wallpapers-hd-grey-wallpaper-20.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\Image\grey-wallpapers-hd-grey-wallpaper-13.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\Image\lightbluebackground.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\Image\noisy_grey-HD.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\ImageRegistration\Image\papyrus.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
